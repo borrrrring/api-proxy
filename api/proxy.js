@@ -6,7 +6,7 @@ const app = express();
 // 代理地址
 const PROXY_TARGETS = [
     { path: "/api/proxy/openai", target: "https://api.openai.com" },
-    { path: "/api/proxy/gemini-pro", target: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent" },
+    { path: "/api/proxy/gemini-pro", target: "https://generativelanguage.googleapis.com" },
 ]
 
 PROXY_TARGETS.forEach(({ path, target }) => {

@@ -15,7 +15,7 @@
 - 安装
 
   ```bash
-  git clone https://github.com/TheRamU/api-proxy.git
+  git clone https://github.com/borrrrring/api-proxy.git
   cd api-proxy
   npm install
   ```
@@ -48,7 +48,7 @@
 - 安装
 
   ```bash
-  git clone https://github.com/TheRamU/api-proxy.git
+  git clone https://github.com/borrrrring/api-proxy.git
   cd api-proxy
   sh install.sh
   ```
@@ -111,5 +111,5 @@
   curl \
     -H 'Content-Type: application/json' \
     -d '{"contents":[{"parts":[{"text":"Hello"}]}]}' \
-    -X POST https://proxyhost/api/proxy/gemini-pro?key=YOUR_API_KEY
+    -X POST https://proxyhost/api/proxy/gemini-pro/v1beta/models/gemini-pro:generateContent?key=YOUR_API_KEY
   ```
